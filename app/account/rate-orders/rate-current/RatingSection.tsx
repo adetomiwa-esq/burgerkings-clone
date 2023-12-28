@@ -31,9 +31,9 @@ export default function RatingSection() {
 
     
   return (
-    <div className='w-7/12 mx-auto my-7'>
+    <div className='w-11/12 sm:w-7/12 mx-auto my-7'>
       <div className='flex items-center px-3'>
-        <img src={currentOrder.imgSrc} className='w-36 mr-3' alt="" />
+        <img src={currentOrder.imgSrc} className='w-24 sm:w-36 mr-3' alt="" />
         <h2>{currentOrder.h1}</h2>
       </div>
 

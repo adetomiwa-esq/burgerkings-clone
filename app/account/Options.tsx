@@ -8,8 +8,8 @@ export default function Options() {
     {title: 'Account Info', url: ''},
     {title: 'Payment Methods', url: ''},
     {title: 'Recent Orders', url: ''},
-    {title: 'Track Order', url: ''},
-    {title: 'Rate Previous Orders', url: ''},
+    {title: 'Track Order', url: '/account/track-order'},
+    {title: 'Rate Previous Orders', url: '/account/rate-orders'},
     {title: 'Communication preferences', url: ''},
     {title: 'Account Info', url: ''},
   ]
