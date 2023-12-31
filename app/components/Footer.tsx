@@ -10,7 +10,7 @@ import { MdHomeFilled } from "react-icons/md";
 export default function Footer() {
     const pathname = usePathname()
   return (
-    <footer className="h-[65px] md:h-fit">
+    <footer className={`h-[65px] md:h-fit ${pathname === '/menu/picker/ratings' ? 'hidden' : ''}`}>
         <section className="md:hidden flex justify-between items-center h-[65px] fixed bottom-0 left-0 w-full border-t bg-[rgb(245,235,220)] border-t-[rgb(215,199,181)] z-50 text-[12px] px-[2px] sm:px-7">
             <div className="flex flex-col items-center">
                 <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/6ddcc22d3f6a72a15bfbee5105b4e48d5e57c7f0-24x24.svg" alt="" className="w-5"/>

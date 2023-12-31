@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 import { homeImg } from './Mockdata'
+import 'aos/dist/aos.css'
+import AOS from 'aos'
 
 export default function TopSection() {
+
+  useEffect(() => {
+    AOS.init({duration: 3000})
+  }, [])
   return (
     <section>
+        <div className={`fixed top-12 left-1/2`}>
+          <h1>Burger King, The King of Grills</h1>
+          <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/fe9f2cc38fc372d47c909b4aedc3429e8bfbc89b-590x393.png?w=750&q=40&fit=max&auto=format" alt="" />
+        </div>
+
         <div className='bg-[rgb(80,35,20)] flex justify-between items-center text-white pb-4 pt-9 px-5'>
             <div className='w-7/12 md:w-9/12 '>
                 <img src='https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/0cf1af0a0daab9d078b561f98d55a73aec3bcb61-1250x200.png?w=320&q=40&fit=max&auto=format' alt='burgerking' className='w-[220px]' />
