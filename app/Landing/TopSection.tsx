@@ -1,20 +1,34 @@
-import React, { useEffect } from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { homeImg } from './Mockdata'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
+import { AiOutlineClose } from 'react-icons/ai'
+import { FaArrowRight } from 'react-icons/fa'
 
 export default function TopSection() {
 
   useEffect(() => {
     AOS.init({duration: 3000})
   }, [])
+
+  const [display, setDisplay] = useState(true)
+  function removeBanner(){
+    setDisplay(false)
+  }
   return (
     <section>
-        <div className={`fixed top-12 left-1/2`}>
-          <h1>Burger King, The King of Grills</h1>
-          <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/fe9f2cc38fc372d47c909b4aedc3429e8bfbc89b-590x393.png?w=750&q=40&fit=max&auto=format" alt="" />
+      <div className={`fixed top-[65px] w-full md:top-[88px] z-[90] h-fit  ${display ? '' : 'hidden'}`}>
+        <div className={` w-[90%] max-w-[600px] mx-auto text-[rgb(80,35,20)] rounded-2xl shadow-2xl bg-[#eedbbf] pt-4 text-center pb-6 px-4`} data-aos="fade-down">
+          <button className='ml-auto text-white w-6 h-6 rounded-full flex items-center justify-center mr-2 bg-[rgb(214,35,0)] mb-4' onClick={removeBanner}><AiOutlineClose /></button>
+          <h1 className=' text-4xl font-black'>Burger King, The King of Grills</h1>
+          <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/fe9f2cc38fc372d47c909b4aedc3429e8bfbc89b-590x393.png?w=750&q=40&fit=max&auto=format" alt="" className='h-44 -mt-14 mx-auto' />
+          <p className='italic text-lg font-bold'>Never tried Flame Grilled Burger?</p>
+          <p className='text-lg font-bold'>why {`don't`} you try our flame grilled whopper meal?  <Link href='/menu/picker' className='font-bold text-lg inline-block'><FaArrowRight /></Link></p>
         </div>
+      </div>
+        
 
         <div className='bg-[rgb(80,35,20)] flex justify-between items-center text-white pb-4 pt-9 px-5'>
             <div className='w-7/12 md:w-9/12 '>
