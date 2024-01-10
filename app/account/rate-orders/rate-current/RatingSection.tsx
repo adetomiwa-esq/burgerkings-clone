@@ -66,6 +66,14 @@ export default function RatingSection() {
             className='border-b border-[rgb(121,68,51)] bg-transparent w-full px-1'
           />
 
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder='Restaurant address *'
+            className='border-b border-[rgb(121,68,51)] bg-transparent w-full px-1 mt-8'
+          />
+
           <div className='my-8'>
             <label htmlFor="" className='block mb-3 text-[13px]'>Write a Review *</label>
             <textarea name="" id="" className='bg-transparent border border-[rgb(121,68,51)] resize-none w-full rounded-lg h-24'></textarea>

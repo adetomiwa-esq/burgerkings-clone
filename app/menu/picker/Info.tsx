@@ -1,8 +1,9 @@
 import React from 'react'
+import { AiOutlineRight } from 'react-icons/ai'
 
 export default function Info() {
   return (
-    <div className='text-[11px] font-semibold leading-[18px]'>
+    <div className='text-[11px] font-semibold leading-[18px] mb-12'>
         <div>
             <h1 className='text-lg font-bold mb-5'>Information</h1>
             <p className='mb-4'>This item contains <span className='font-black'>wheat, sesame, celery and gluten,</span> may contain <span className='font-black'>milk and eggs,</span> and may be cooked on same equipment as <span className='font-black'>soy.</span> Modifications are not represented in this list.</p>
@@ -43,6 +44,13 @@ export default function Info() {
                 <span className='font-black text-[12px]'>BURGER KING®:</span>kitchens have strict controls in place to reduce the risk of cross-contact such as separate storage areas, utensils and cleaning equipment for products containing allergens. In common with other catering operations, our kitchens are fast-paced and open environments, hence we cannot guarantee that any product is entirely free from any allergen. Customers with food allergies and intolerances should be aware of this information.
             </p>
             <p>For allergen information for branded items such as dip pots, sachets, and bottled drinks, see printed packaging for details.</p>
+
+            <div className="flex justify-between mx-3 my-5 text-lg">
+                <p>Nutritional Information and Allergens</p>
+                <i><AiOutlineRight /></i>
+            </div>
+
+            <button className='bg-[rgb(214,35,0)] text-white w-[93%] mx-auto py-2 rounded-[25px] block'>Select restaurant for pricing</button>
 
         </div>
     </div>

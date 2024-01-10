@@ -12,30 +12,30 @@ export default function Footer() {
   return (
     <footer className={`h-[65px] md:h-fit`}>
         <section className="md:hidden flex justify-between items-center h-[65px] fixed bottom-0 left-0 w-full border-t bg-[rgb(245,235,220)] border-t-[rgb(215,199,181)] z-50 text-[12px] px-[2px] sm:px-7">
-            <div className="flex flex-col items-center">
+            <Link href="/menu" className="flex flex-col items-center">
                 <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/6ddcc22d3f6a72a15bfbee5105b4e48d5e57c7f0-24x24.svg" alt="" className="w-5"/>
                 <span>Home</span>
-            </div>
+            </Link>
 
-            <div className="flex flex-col items-center">
+            <Link href="/order" className="flex flex-col items-center">
                 <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/d8c48963ebe2c5773d8737e9fd5ead3bf06aecda-24x24.svg" alt="" className="w-5"/>
                 <span>Order</span>
-            </div>
+            </Link>
 
-            <div className="flex flex-col items-center">
+            <Link href="" className="flex flex-col items-center">
                 <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/aba96e1a3f6ed7c5dcd20208f9a3b5f22c56c7e9-24x24.svg" alt="" className="w-5"/>
                 <span>Loyalty Code</span>
-            </div>
+            </Link>
 
-            <div className="flex flex-col items-center">
+            <Link href="/offers" className="flex flex-col items-center">
                 <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/94efcc5626019bed5b07ae8a4ed4cd6bada7b8e4-24x24.svg" alt="" className="w-5"/>
                 <span>Offers</span>
-            </div>
+            </Link>
 
-            <div className="flex flex-col items-center">
+            <Link href="" className="flex flex-col items-center">
                 <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_gb/51704a3b3ab4c60ea871a90197b827e7b974f195-280x200.svg" alt="" className="w-5"/>
                 <span>Rewards</span>
-            </div>
+            </Link>
 
         </section>
 

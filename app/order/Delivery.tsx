@@ -21,12 +21,12 @@ export default function Delivery() {
                     <div className="flex flex-row  items-center">
                         <div className="w-[20%] min-h-[13vh] flex justify-center items-center">
                             <Link href={`/order`} className="w-[50%]">
-                                <button className="w-full h-[50px] border border-gray-500 btn text-[16px]  text-[#542f26ff] tee">Pick up</button>
+                                <button className="w-full h-[50px] border border-gray-500 btn text-[16px] bg-[rgb(80,35,20)] text-[rgb(245,235,220)] tee">Pick up</button>
                             </Link>
 
 
                             <Link href={`delivery`} className="w-[50%]">
-                                <button className="w-full h-[50px] border border-gray-500 btn text-[16px] text-[rgb(245,235,220)] bg-[rgb(80,35,20)] tee">Delivery</button>
+                                <button className="w-full h-[50px] border border-gray-500 btn text-[16px] text-[#542f26ff]  tee">Delivery</button>
                             </Link>
                             
                             
@@ -39,7 +39,7 @@ export default function Delivery() {
                     </div>
 
                     {
-                        <CurrentLocation />
+                       <PickUp />
                     }
 
                 </div>

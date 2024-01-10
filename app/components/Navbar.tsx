@@ -31,7 +31,7 @@ export default function Navbar() {
         {/* <div className='sm:hidden' onClick={toggleNav}>
           <span>{displayNav ? <AiOutlineClose /> : <FaBars />}</span>
         </div> */}
-        <div><Link href='/account'><FaBars /></Link></div>
+        <div className='mr-2'><Link href='/account'><FaBars /></Link></div>
         <ul className="hidden items-center w-[380px] justify-between font-extrabold text-lg md:flex">
           <li><Link href='/delivery'>Order</Link></li>
           <li><Link href='/offers'>Offers</Link></li>
@@ -41,7 +41,9 @@ export default function Navbar() {
         </ul>
 
         <div className='flex items-center md:ml-auto md:mr-8'>
-          <Image src='/images/burger.png' width={70} height={62} alt='logo' className='w-[50px] h-[40px] sm:w-[75px] sm:h-[75px]'/>
+          <Link href="/">
+            <Image src='/images/burger.png' width={70} height={62} alt='logo' className='w-[50px] h-[40px] sm:w-[75px] sm:h-[75px]'/>
+          </Link>
           <p className='font-bold hidden md:block'>For item availability <Link className='underline hover:decoration-transparent font-normal' href='/'>Choose your location</Link></p>
         </div>
 
